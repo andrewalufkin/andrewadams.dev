@@ -5,15 +5,14 @@ export const projects = [
       title: "Full-Stack CI/CD Pipeline Manager",
       shortDescription: "A comprehensive CI/CD pipeline management tool with integrations and monitoring capabilities.",
       longDescription: `This project is a full-stack CI/CD pipeline manager that streamlines the development workflow.
-      It integrates with GitHub, GitLab, and Bitbucket to automate build processes, run tests, and deploy applications.
+      It integrates with GitHub & GitLab to automate build processes, run tests, and deploy applications.
       The system includes real-time monitoring, notifications, and a customizable dashboard.`,
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Docker", "Jenkins", "AWS"],
+      technologies: ["React", "Node.js", "Express", "PostgreSQL", "AWS"],
       features: [
         "Automated build processes with container support",
         "Parallel test execution and reporting",
-        "Deployment automation with rollback capabilities",
-        "Real-time monitoring and notifications",
-        "Custom workflow creation through UI or YAML configuration"
+        "One-click deployment to AWS",
+        "Custom workflow creation through UI"
       ],
       challenges: [
         "Implementing secure credential management",
@@ -37,7 +36,7 @@ export const projects = [
       title: "AI Bible Study Assistant",
       shortDescription: "An AI-powered Bible study application that provides insights, cross-references, and contextual information.",
       longDescription: `This project is an AI-powered Bible study assistant that uses natural language processing to provide insights, cross-references, and contextual information.`,
-      technologies: ["React", "Node.js", "Express", "PostgreSQL", "AWS"],
+      technologies: ["React", "Flask", "MongoDB", "Railway"],
       features: [
         "Natural language processing for Bible study",
         "Cross-references and contextual information",
