@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="container">
         <h2>My Projects</h2>
         <p className="section-description">
-          Here are some of my recent projects. Each demonstrates different skills and technologies.
+          Here are some of my recent projects. 
         </p>
         <div className="projects-grid">
           {projects.map(project => (

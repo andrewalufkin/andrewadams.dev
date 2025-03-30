@@ -9,26 +9,17 @@ export const projects = [
       The system includes real-time monitoring, notifications, and a customizable dashboard.`,
       technologies: ["React", "Node.js", "Express", "PostgreSQL", "AWS"],
       features: [
-        "Automated build processes with container support",
-        "Parallel test execution and reporting",
+        "Automated build processes",
         "One-click deployment to AWS",
-        "Custom workflow creation through UI"
-      ],
-      challenges: [
-        "Implementing secure credential management",
-        "Designing a scalable architecture to handle concurrent builds",
-        "Creating an intuitive UI for complex pipeline configurations"
-      ],
-      solutions: [
-        "Used HashiCorp Vault for credential management",
-        "Implemented a microservice architecture for build agents",
-        "Created a visual pipeline builder with drag-and-drop functionality"
+        "Custom workflow creation through UI",
+        "Custom domain management",
+        "Webhook integration with GitHub",
+        "Billing system with Stripe"
       ],
       images: [
         "/images/LightCI-screenshot.png",
-        "/images/LightCI-screenshot2.png"
       ],
-      githubUrl: "https://github.com/andrewalufkin/LightCI",
+      githubUrl: "https://github.com/andrewalufkin/lightci",
       liveUrl: "todo"
     },
     {
@@ -38,11 +29,14 @@ export const projects = [
       longDescription: `This project is an AI-powered Bible study assistant that uses natural language processing to provide insights, cross-references, and contextual information.`,
       technologies: ["React", "Flask", "MongoDB", "Railway"],
       features: [
-        "Natural language processing for Bible study",
-        "Cross-references and contextual information",
-        "Integration with Bible API for detailed study tools"
+        "RAG (Retrieval-Augmented Generation) for generating insights",
+        "User note system",
+        "Social network for sharing study notes"
       ],
-      githubUrl: "https://github.com/yourusername/ai-bible-app",
-      liveUrl: "https://ai-bible-app.yourdomain.com"
+      images: [
+        "/images/bibleApp-screenshot.png",
+      ],
+      githubUrl: "https://github.com/andrewalufkin/bible-app-backend",
+      liveUrl: "https://bible-app-frontend-production.up.railway.app/"
     }   
   ];

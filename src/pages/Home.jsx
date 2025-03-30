@@ -25,17 +25,6 @@ const Home = () => {
             <Terminal />
           </div>
         </div>
-        
-        <div className="featured-projects">
-          <h2>Featured Projects</h2>
-          <div className="featured-grid">
-            {/* This would show your top 2 projects */}
-            {/* You could extract this to a component that uses the first 2 projects from your projects.js file */}
-          </div>
-          <div className="view-all">
-            <Link to="/projects" className="text-link">View all projects →</Link>
-          </div>
-        </div>
       </div>
     </div>
   );

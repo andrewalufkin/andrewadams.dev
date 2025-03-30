@@ -30,9 +30,9 @@ const Header = ({ toggleDarkMode, darkMode }) => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo">
-            <span className="logo-text">Andrew Adams</span>
+            <span className="logo-text">Andrewbadams</span>
             <span className="logo-dot">.</span>
-            <span className="logo-dev">dev</span>
+            <span className="logo-dev">com</span>
           </Link>
 
           <div className="header-right">

@@ -1,5 +1,5 @@
 // App.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -11,14 +11,36 @@ import Contact from './pages/Contact';
 import './styles/main.css';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  
+  // Attempt to read initial theme from localStorage or system preference
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initialMode = localStorage.getItem('darkMode') === 'true' || (localStorage.getItem('darkMode') === null && prefersDark);
+  const [darkMode, setDarkMode] = useState(initialMode);
+
+  // Effect to update body class and localStorage
+  useEffect(() => {
+    const body = document.body;
+    if (darkMode) {
+      body.classList.add('dark-mode');
+      body.classList.remove('light-mode');
+      localStorage.setItem('darkMode', 'true');
+    } else {
+      body.classList.add('light-mode');
+      body.classList.remove('dark-mode');
+      localStorage.setItem('darkMode', 'false');
+    }
+    // Optional: Clean up class on unmount if necessary, though unlikely for App
+    // return () => {
+    //   body.classList.remove('dark-mode', 'light-mode');
+    // };
+  }, [darkMode]); // Dependency array ensures this runs when darkMode changes
+
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode(prevMode => !prevMode);
   };
-  
+
   return (
-    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
+    // Remove theme class from this div
+    <div>
       <Router>
         <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <main>

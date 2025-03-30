@@ -56,7 +56,7 @@ const About = () => {
             <h3>Frameworks & Libraries</h3>
             <div className="skills-grid">
               {skills.frameworks.map((skill, index) => (
-                <SkillBadge key={index} name={skill.name} level={skill.level} />
+                <SkillBadge key={index} name={skill.name} />
               ))}
             </div>
           </div>
@@ -65,7 +65,7 @@ const About = () => {
             <h3>Tools & Platforms</h3>
             <div className="skills-grid">
               {skills.tools.map((skill, index) => (
-                <SkillBadge key={index} name={skill.name} level={skill.level} />
+                <SkillBadge key={index} name={skill.name} />
               ))}
             </div>
           </div>
