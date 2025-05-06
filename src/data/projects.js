@@ -34,7 +34,7 @@ export const projects = [
         "Social network for sharing study notes"
       ],
       images: [
-        "/images/bibleApp-screenshot.png",
+        "/images/BibleApp-screenshot.png",
       ],
       githubUrl: "https://github.com/andrewalufkin/bible-app-backend",
       liveUrl: "https://bible-app-frontend-production.up.railway.app/"
