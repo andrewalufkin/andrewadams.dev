@@ -64,24 +64,6 @@ const ProjectDetail = () => {
             </ul>
           </div>
           
-          <div className="project-implementation">
-            <h2>Challenges & Solutions</h2>
-            <div className="challenges-solutions">
-              {project.challenges.map((challenge, index) => (
-                <div key={index} className="challenge-solution-pair">
-                  <div className="challenge">
-                    <h3>Challenge</h3>
-                    <p>{challenge}</p>
-                  </div>
-                  <div className="solution">
-                    <h3>Solution</h3>
-                    <p>{project.solutions[index]}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          
           {project.codeSnippet && (
             <div className="code-highlight">
               <h2>Featured Code</h2>
